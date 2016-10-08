@@ -18,7 +18,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle  = UIActivityIndicatorViewStyle.Gray
+        activityIndicator.activityIndicatorViewStyle  = UIActivityIndicatorViewStyle.gray
         activityIndicator.center = view.center
         
         startActivityIndicator()
@@ -27,8 +27,8 @@ class RegisterViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let url = NSURL (string: "http://www.avantgardeconference.com/register/registration")
-        let requestObj = NSURLRequest(URL: url!)
+        let url = URL (string: "http://www.avantgardeconference.com/register/registration")
+        let requestObj = URLRequest(url: url!)
         registerWebviewOutlet.loadRequest(requestObj)
     }
 
@@ -38,8 +38,8 @@ class RegisterViewController: UIViewController {
     }
     
 
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     func startActivityIndicator() {

@@ -27,33 +27,33 @@ class SpeakersViewController: UIViewController {
     }
     
 
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     //Passing data to SpeakerDetailViewController
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
         if segue.identifier == "jabinToSpeakerDetailSegue" {
-            var svc = segue.destinationViewController as! SpeakerDetailViewController
+            let svc = segue.destination as! SpeakerDetailViewController
             svc.dataPassed = "jabin"
             print(svc.dataPassed)
         }else if (segue.identifier == "micahToSpeakerDetailSegue") {
-            var svc = segue.destinationViewController as! SpeakerDetailViewController
+            let svc = segue.destination as! SpeakerDetailViewController
             svc.dataPassed = "micah"
             print(svc.dataPassed)
             
         }else if (segue.identifier == "jamesToSpeakerDetailSegue") {
-            var svc = segue.destinationViewController as! SpeakerDetailViewController
+            let svc = segue.destination as! SpeakerDetailViewController
             svc.dataPassed = "james"
             print(svc.dataPassed)
             
         }else if (segue.identifier == "jayeHollyToSpeakerDetailSegue") {
-            var svc = segue.destinationViewController as! SpeakerDetailViewController
+            let svc = segue.destination as! SpeakerDetailViewController
             svc.dataPassed = "jaye"
             print(svc.dataPassed)
             
         }else if (segue.identifier == "timToSpeakerDetailSegue") {
-            var svc = segue.destinationViewController as! SpeakerDetailViewController
+            let svc = segue.destination as! SpeakerDetailViewController
             svc.dataPassed = "timothy"
             print(svc.dataPassed)
             

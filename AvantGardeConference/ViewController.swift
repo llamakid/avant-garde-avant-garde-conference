@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
 
 

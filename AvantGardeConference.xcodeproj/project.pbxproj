@@ -118,6 +118,7 @@
 					E1DE5D331CE5FDE200A2EB73 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = E9Z9F54K3Z;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -288,6 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.llamakid.AvantGarde;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -303,6 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.llamakid.AvantGarde;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

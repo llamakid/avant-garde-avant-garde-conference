@@ -22,8 +22,8 @@ class VoicesViewController: UIViewController {
     }
     
 
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
 
 }
